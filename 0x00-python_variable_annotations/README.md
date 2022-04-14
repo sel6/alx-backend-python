@@ -1,24 +1,7 @@
 # 0x00. Python - Variable Annotations
 ***
-	__Concepts__
+#Type annotations serve the following purpose:
 
-	Advanced Python
+* Code documentation: thanks to them, a developer reading type-annotated code (his own or someone else’s) will know exactly what type each variables is supposed to be. This helps reduce bugs and exceptions and accelerate the development cycle.
 
-	__Resources__
-
-	Python 3 typing documentation
-	MyPy cheat sheet
-
-	__Learning Objectives__
-
-	At the end of this project, I am expected to be able to explain to anyone, without the help of Google:
-
-	Type annotations in Python 3
-	How you can use type annotations to specify function signatures and variable types
-	Duck typing
-	How to validate your code with mypy
-
-**
-> _pycodestyle style_ :+1:
->> Going Deeper :muscle:
->>> __Son of God__ :clap:
+* Linting and validation: code editors and continuous integration (CI) pipelines can be configured to automatically validate type-annotated code at build-time and catch bugs before they make it to production.
