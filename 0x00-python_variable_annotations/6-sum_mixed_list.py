@@ -1,22 +1,11 @@
 #!/usr/bin/env python3
-"""
-    Mixed lists
-"""
-from typing import Union, List
+""" Return sum of mixed string """
+
+import math
+import typing
+from typing import Union
 
 
-def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
-    """
-        Args:
-            mxd_lst: float-int numbers
-
-        Return:
-            Float base in int or float numbers
-    """
-
-    result: float = 0
-
-    for x in mxd_lst:
-        result += x
-
-    return result
+def sum_mixed_list(mxd_list: typing.List[typing.Union[int, float]]) -> float:
+    """ sums mized intergers and floats"""
+    return math.fsum(mxd_list)

@@ -1,22 +1,10 @@
 #!/usr/bin/env python3
-"""
-    List of floats annotations
-"""
-from typing import List
+""" takes a list of inputs and returns as floats"""
+
+import math
+import typing
 
 
-def sum_list(input_list: List[float]) -> float:
-    """
-        Args:
-            input_list: float numbers
-
-        Return:
-            Sum of the float numbers
-    """
-
-    result: float = 0
-
-    for x in input_list:
-        result += x
-
-    return result
+def sum_list(input_list: typing.List[float]) -> float:
+    """ takes list inputs and returns the floats """
+    return math.fsum(input_list)
